@@ -10,7 +10,7 @@ contract MyPortfolio is ERC721 {
     /**
     * Create NewNFT
     */
-    function nftMint() public {
-
+    function nftMint(address to, uint256 tokenId) public {
+        _mint(to, tokenId);
     }
 }
